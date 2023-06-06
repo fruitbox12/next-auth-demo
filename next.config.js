@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {	reactStrictMode: false,
+const nextConfig = {
+	reactStrictMode: false,
 	typescript: {
 	  ignoreBuildErrors: true,
 	},
@@ -8,12 +9,10 @@ const nextConfig = {	reactStrictMode: false,
     },
   };
   
-  experimental: {
-    appDir: true
-  },
-  images: {
-    domains: ['github.com', 'lh3.googleusercontent.com']
-  }
-}
-
-module.exports = nextConfig
+  module.exports = {
+	env: {
+	},
+  };
+  
+  module.exports = nextConfig;
+  
